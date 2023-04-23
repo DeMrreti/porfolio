@@ -18,14 +18,20 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    box-sizing: border-box;
     font-family: 'Poppins';
+}
+
+body {
+    height: 1200px;
 }
 
 .navbar {
     display: flex;
-    padding: 2%;
     justify-content: space-around;
     background-color: yellow;
+    align-items: center;
+    height: 8%;
 }
 
 .titulo {
@@ -50,6 +56,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 40%;
 }
 
 .izquierda {
@@ -86,36 +93,49 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-self: center;
-    height: 120px;
+    align-items: center;
+    height: 12%;
 }
 
 .projects {
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-around;
     column-gap: 5%;
-    margin-bottom: 2%;
+    width: 90%;
+    height: 40%;
+    align-items: center;
 }
 
 .contenedor {
     display: flex;
-    position: relative;
+    flex-grow: 1;
     flex-direction: column;
     background-color: rgb(245, 245, 245);
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 70%;
+    height: 70%;
     row-gap: 10%;
-    height: 400px;
+    height: 70%;
     border: 5px solid yellow;
     border-radius: 1em;
 }
 
 .logo {
-    width: 200px;
+    width: 60%;
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        height: 2200px;
+    }
+
+    .navbar {
+        height: 6%;
+    }
+
     .opciones {
         display: none;
     }
@@ -137,12 +157,16 @@
     }
 
     .derecha img {
-        width: 300px
+        width: 80%;
     }
 
     .projects {
         flex-direction: column;
         align-items: center;
         row-gap: 40px;
+    }
+
+    .contenedor {
+        height: 90%;
     }
 }
