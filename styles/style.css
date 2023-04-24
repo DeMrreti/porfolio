@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+
+/*
+primary: #0A2647
+secondary: #144272
+tertiary: #205295
+quaternary: #2C74B3
+*/
+
 @keyframes BottomTotop {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
+    0%   {color: #D61355;}
+    16%  {color: #F94A29;}
+    32%  {color: #FCE22A;}
+    48%  {color: #30E3DF;}
+    64%  {color: #FCE22A;}
+    80%  {color: #F94A2A;}
+    100% {color: #D61355;}
 }
 
 * {
@@ -17,11 +28,12 @@
 
 body {
     height: 1200px;
+    background-color: #0A2647;
+    color: white;
 }
 
 #navbar {
     display: flex;
-    background-color: yellow;
     align-items: center;
     height: 8%;
 }
@@ -60,7 +72,11 @@ body {
 
 .botones a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.botones a:active {
+    color: #2C74B3;
 }
 
 #cuerpo {
@@ -127,14 +143,14 @@ body {
 .contenedor {
     display: flex;
     flex-direction: column;
-    background-color: rgb(245, 245, 245);
+    background-color: white;
     justify-content: center;
     align-items: center;
     width: 20%;
     height: 80%;
     row-gap: 10%;
-    border: 5px solid yellow;
     border-radius: 1em;
+    color: black;
 }
 
 .logo {
