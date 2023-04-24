@@ -27,15 +27,18 @@ quaternary: #2C74B3
 }
 
 body {
-    height: 1200px;
+    height: 1500px;
     background-color: #0A2647;
     color: white;
 }
 
 #navbar {
+    width: 100%;
+    background-color: #0A2647;
     display: flex;
     align-items: center;
-    height: 8%;
+    height: 150px;
+    position: fixed;
 }
 
 .menu {
@@ -83,7 +86,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40%;
+    height: 70%;
 }
 
 .izquierda {
@@ -98,6 +101,9 @@ body {
 .izquierda .texto {
     width: 40%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .izquierda .texto p {
@@ -132,9 +138,31 @@ body {
     height: 12%;
 }
 
-#projects {
+#skill {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    height: 45%;
+    align-items: center;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 60%;
+    row-gap: 10%;
+    border-radius: 0.5em;
+    color: black;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
     width: 100%;
     height: 45%;
     align-items: center;
@@ -147,14 +175,82 @@ body {
     justify-content: center;
     align-items: center;
     width: 20%;
-    height: 80%;
+    height: 60%;
     row-gap: 10%;
-    border-radius: 1em;
+    border-radius: 0.5em;
     color: black;
 }
 
 .logo {
     width: 50%;
+}
+
+.form {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+.formulario .dr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formulario .dr input {
+    border-radius: 0.5em;
+    padding: 3%;
+    border: none;
+}
+
+.formulario .dr input:focus {
+    outline: none;
+}
+
+.formulario .dr input:active {
+    outline: none;
+}
+
+.formulario .dr button {
+    padding: 3%;
+    border-radius: 0.5em;
+    background-color: #2C74B3;
+    border: none;
+}
+
+.formulario .dr button:hover {
+    transition: 1s;
+    background-color: white;
+}
+
+.formulario .iz {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4%;
+}
+
+.formulario .iz input {
+    border-radius: 0.5em;
+    padding: 3%;
+    border: none;
+    height: 340px;
+}
+
+.formulario .iz input:focus {
+    outline: none;
+}
+
+.formulario .iz input:active {
+    outline: none;
 }
 
 @media screen and (max-width: 480px) {
