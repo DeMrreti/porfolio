@@ -1,3 +1,3 @@
 # Porfolio
 
-demrreti.github.io/porfolio/
+https://demrreti.github.io/porfolio/
